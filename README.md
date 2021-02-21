@@ -6,6 +6,8 @@ This rumble library does not unlock the Gameboy Player. Prior initializing the l
 
 Usage example:
 ```C++
+// C++
+
 if (unlock_gameboy_player()) {
 
     RumbleGBPConfig conf{[](void (*rumble_isr)(void)) {

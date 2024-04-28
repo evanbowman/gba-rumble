@@ -10,7 +10,7 @@ bool unlock_gbp()
 
     static const int splashscreen_duration(125);
 
-    static volatile u32* keys = (volatile u32*)0x04000130;
+    static volatile u16* keys = (volatile u16*)0x04000130;
 
     // Show the Gameboy Player splash screen.
     memcpy16((u16*)0x6008000, gbp_logo_pixels, (sizeof gbp_logo_pixels) / 2);
